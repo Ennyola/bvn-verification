@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> bvn verification</title>
+	<style type="text/css">
+		body{
+			 background-color:rgb(216,218,190); 
+			 background-image: url(./imagess.jpg);
+			 background-repeat: no-repeat;
+			 background-size:cover;
+			 color: white;
+			 
+
+		}
+
+		.header{
+			margin-top: 50px;
+		
+		}
+
+
+
+		.btn{
+			margin-top: 45px;
+			width: 90px;
+			border-radius: 13px;
+			cursor:pointer;
+			height: 35px;
+			position: relative;
+	
+		}
+		.btn:hover{
+			 color: grey;
+			 transform:scale(0.8,0.9);
+			 transition: all 0.5s;	
+	
+		}
+
+
+		.form{
+			margin-top: 67px;
+			margin-left: 25px;
+		}
+		#bvn{
+
+			border-radius: 13px;
+			height: 28px;
+
+		}
+		#welcome{
+			font-family: ;
+			color: white;
+
+		}
+		.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+	</style>
+</head>
+
+<body>
+	<div id = "container" align="center">
+		<div class="header">
+			<h1 id = "welcome" > Welcome to Bvn Validation service.</h1>
+			<h4> Click on the button below to continue</h4>
+		</div>
+
+		<button class = "btn" id = "start"> Click here</button>
+
+		
+			<input type="TEXT" name="bvn" id = "bvn" placeholder="Enter your bvn">
+			<input type="submit" value="Enter" class="btn" id = "submit-btn">
+
+			<div id="myModal" class="modal">
+
+			<div class="modal-content">
+	   		 <span class="close">&times;</span>
+	    		<p id = "p-t"></p>
+	  		</div>
+		
+	</div>
+</body>
+
+<script src="./js/main.js"></script>
+</html>
